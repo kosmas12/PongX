@@ -1,0 +1,2 @@
+all:
+	i686-w64-mingw32-g++ main.cpp -o PongX.exe -lSDL2main -lSDL2 -mwindows -static-libgcc -static-libstdc++

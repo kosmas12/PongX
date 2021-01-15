@@ -1,0 +1,15 @@
+XBE_TITLE = PongX
+GEN_XISO = $(XBE_TITLE).iso
+SRCS += main.cpp
+NXDK_DIR = /home/$(USERNAME)/nxdk
+NXDK_SDL = y
+NXDK_CXX = y
+
+all_local: cp_resources all
+
+include $(NXDK_DIR)/Makefile
+
+cp_resources:
+	cp *.png bin/
+	cp *.ttf bin/
+
